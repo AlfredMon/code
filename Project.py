@@ -13,12 +13,12 @@ input_box2.grid(row=3, column=0)
 input_box2.insert(0, "0") 
 label = tk.Label(window, text="How many weeks do you have?")
 label.grid(row=3, column=1)
-
-input_box3 = tk.Entry(window)
-input_box3.grid(row=5, column=0)
-input_box3.insert(0, "0") 
-label = tk.Label(window, text="How long in a day do you study?")
-label.grid(row=5, column=1)
+for i in range(22):
+    input_box3 = tk.Entry(window)
+    input_box3.grid(row=4+i, column=0)
+    input_box3.insert(0, "0") 
+    label = tk.Label(window, text="How long in a day do you study?")
+    label.grid(row=4+i, column=1)
 
 
 window.mainloop()
